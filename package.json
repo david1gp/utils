@@ -1,6 +1,6 @@
 {
   "name": "@adaptive-ds/utils",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "scripts": {
     "build": "rm -rf ./dist && bun tsc -p ./tsconfig.lib.json",
     "test": "bun test",
