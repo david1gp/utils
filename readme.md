@@ -4,8 +4,8 @@ A comprehensive collection of TypeScript utilities for arrays, URLs, random ID g
 
 Quick link
 
-- code - https://github.com/adaptive-shield-matrix/utils
-- npm - https://www.npmjs.com/package/@adaptive-sm/utils
+- code - https://github.com/david1gp/utils
+- npm - https://www.npmjs.com/package/@adaptive-ds/utils
 
 ## Features
 
@@ -20,9 +20,9 @@ Quick link
 ## Installation
 
 ```bash
-npm install @adaptive-sm/utils
+npm install @adaptive-ds/utils
 # or
-bun add @adaptive-sm/utils
+bun add @adaptive-ds/utils
 ```
 
 ## Quick Start
@@ -32,7 +32,7 @@ import {
   arrCreate,
   searchParamsToObject,
   generateReadableId,
-} from "@adaptive-sm/utils";
+} from "@adaptive-ds/utils";
 
 // Create arrays with custom logic
 const squares = arrCreate(5, (i) => i * i); // [0, 1, 4, 9, 16]

@@ -1,5 +1,5 @@
 {
-  "name": "@adaptive-sm/utils",
+  "name": "@adaptive-ds/utils",
   "version": "0.7.0",
   "scripts": {
     "build": "rm -rf ./dist && bun tsc -p ./tsconfig.lib.json",
@@ -28,7 +28,7 @@
   "type": "module",
   "private": false,
   "license": "MIT",
-  "homepage": "https://github.com/adaptive-shield-matrix/utils",
+  "homepage": "https://github.com/david1gp/utils",
   "description": "A comprehensive collection of TypeScript utilities for arrays, URLs, random ID generation, validation, and common development tasks. Lightweight, tree-shakable, and Bun/Node.js compatible.",
   "keywords": [
     "typescript",
@@ -46,7 +46,7 @@
     "development-tools"
   ],
   "repository": {
-    "url": "git+https://github.com/adaptive-shield-matrix/utils.git"
+    "url": "git+https://github.com/david1gp/utils.git"
   },
   "exports": {
     "./*": "./dist/*"
