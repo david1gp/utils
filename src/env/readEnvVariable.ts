@@ -1,4 +1,4 @@
-import { createError, createResult, type Result } from "~utils/result/Result"
+import { createError, createResult, type Result } from "../result/Result"
 
 export function readEnvVariable(name: string): string | undefined {
   // Check Backend/Bun/Node.js/Convex process environment first

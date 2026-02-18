@@ -1,4 +1,4 @@
-import { dateTimeFormatStyle, type DateTimeFormatStyle } from "~utils/date/dateTimeFormatStyle"
+import { dateTimeFormatStyle, type DateTimeFormatStyle } from "./dateTimeFormatStyle"
 import { dateTimeFormatterGetCached } from "./dateTimeFormatterGetCached"
 
 export function dateTimeFormat(date: Date|string, format: DateTimeFormatStyle, l?: string) {

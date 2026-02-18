@@ -1,4 +1,4 @@
-import { type DateTimeFormatStyle, dateTimeFormatStyle } from "~utils/date/dateTimeFormatStyle"
+import { type DateTimeFormatStyle, dateTimeFormatStyle } from "./dateTimeFormatStyle"
 
 export function dateTimeFormatterCreate(format: DateTimeFormatStyle, l?: string): Intl.DateTimeFormat {
   if (format === dateTimeFormatStyle.iso) {

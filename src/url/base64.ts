@@ -1,4 +1,4 @@
-import { createResult, createResultError, type Result } from "~utils/result/Result"
+import { createResult, createResultError, type Result } from "../result/Result"
 
 export function base64decode1Unsafe(base64: string) {
   return Buffer.from(base64, "base64").toString("binary")

@@ -1,5 +1,5 @@
-import type { PromiseResult } from "~utils/result/Result"
-import { sendTelegramMessageApi, telegramMessageParseMode } from "~utils/telegram/sendTelegramMessageApi"
+import type { PromiseResult } from "../result/Result"
+import { sendTelegramMessageApi, telegramMessageParseMode } from "./sendTelegramMessageApi"
 
 export type TelegramMessageSendingProps = {
   chatId: string | number

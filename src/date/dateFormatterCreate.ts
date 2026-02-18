@@ -1,4 +1,4 @@
-import { type DateFormatStyle, dateFormatStyle } from "~utils/date/dateFormatStyle"
+import { type DateFormatStyle, dateFormatStyle } from "./dateFormatStyle"
 
 export function dateFormatterCreate(format: DateFormatStyle, l?: string): Intl.DateTimeFormat {
   switch (format) {

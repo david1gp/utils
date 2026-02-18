@@ -1,4 +1,4 @@
-import { objectEntries } from "~utils/obj/objectEntries"
+import { objectEntries } from "../obj/objectEntries"
 
 export function objToUrlParams2(
   required: Record<string, number | string | boolean | null>,

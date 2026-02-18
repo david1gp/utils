@@ -1,4 +1,4 @@
-import { dateFormatStyle, type DateFormatStyle } from "~utils/date/dateFormatStyle"
+import { dateFormatStyle, type DateFormatStyle } from "./dateFormatStyle"
 import { dateFormatterGetCached } from "./dateFormatterGetCached"
 
 export function dateFormat(date: Date, format: DateFormatStyle, l?: string) {

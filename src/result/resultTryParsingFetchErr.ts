@@ -1,6 +1,6 @@
 import * as a from "valibot"
-import { createError } from "~utils/result/Result"
-import { resultErrSchemaFromJsonString } from "~utils/result/resultErrSchema"
+import { createError } from "./Result"
+import { resultErrSchemaFromJsonString } from "./resultErrSchema"
 
 export function resultTryParsingFetchErr(op: string, text: string, statusCode: number, responseStatusText: string) {
   const op2 = "resultTryParsingFetchErr"

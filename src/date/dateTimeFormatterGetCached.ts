@@ -1,4 +1,4 @@
-import { dateTimeFormatterCreate } from "~utils/date/dateTimeFormatterCreate"
+import { dateTimeFormatterCreate } from "./dateTimeFormatterCreate"
 import { type DateTimeFormatStyle } from "./dateTimeFormatStyle"
 
 let cachedLocale: string | undefined = undefined

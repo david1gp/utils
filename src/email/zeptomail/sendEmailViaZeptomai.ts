@@ -2,9 +2,9 @@ import {
   sendEmailsViaZeptomail,
   type ZeptomailEnvVariableNames,
   type ZeptomailOptionalSender,
-} from "~utils/email/zeptomail/sendEmailsViaZeptomail"
-import { type ZeptomailAddress } from "~utils/email/zeptomail/sendEmailsViaZeptomailApi"
-import { type Result } from "~utils/result/Result"
+} from "./sendEmailsViaZeptomail"
+import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi"
+import { type Result } from "../../result/Result"
 
 export async function sendEmailViaZeptomai(
   subject: string,

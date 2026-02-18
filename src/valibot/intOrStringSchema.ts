@@ -1,5 +1,5 @@
 import * as a from "valibot"
-import { numberOrStringSchema } from "~utils/valibot/numberOrStringSchema"
+import { numberOrStringSchema } from "./numberOrStringSchema"
 
 export const intOrStringSchema = a.pipe(numberOrStringSchema, a.integer())
 export const intMin0OrStringSchema = a.pipe(numberOrStringSchema, a.integer(), a.minValue(0))

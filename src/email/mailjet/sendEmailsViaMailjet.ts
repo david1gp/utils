@@ -3,9 +3,9 @@ import {
   type MailjetBulkResult,
   type MailjetEmailProps,
   type MailjetSendProps,
-} from "~utils/email/mailjet/sendEmailsViaMailjetApi"
-import { readEnvVariableResult } from "~utils/env/readEnvVariable"
-import { createResult, type Result, type ResultErr } from "~utils/result/Result"
+} from "./sendEmailsViaMailjetApi"
+import { readEnvVariableResult } from "../../env/readEnvVariable"
+import { createResult, type Result, type ResultErr } from "../../result/Result"
 
 export type MailjetEnvVariableNames = {
   apiKeyPublic: string
