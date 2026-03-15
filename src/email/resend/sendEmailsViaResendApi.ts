@@ -1,5 +1,5 @@
+import { type Result, createError, createResult } from "@adaptive-ds/result"
 import * as a from "valibot"
-import { type Result, createError, createResult } from "~result"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty"
 
 export type ResendAddressInfo = {

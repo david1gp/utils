@@ -1,8 +1,8 @@
-import { type Result } from "~result"
+import { type Result } from "@adaptive-ds/result"
 import {
-  sendEmailsViaZeptomail,
-  type ZeptomailEnvVariableNames,
-  type ZeptomailOptionalSender,
+    sendEmailsViaZeptomail,
+    type ZeptomailEnvVariableNames,
+    type ZeptomailOptionalSender,
 } from "./sendEmailsViaZeptomail"
 import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi"
 

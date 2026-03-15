@@ -1,4 +1,4 @@
-import { type Result } from "~result"
+import { type Result } from "@adaptive-ds/result"
 import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend"
 import { type ResendAddressInfo, type ResendEmailProps, type ResendEmailSend } from "./sendEmailsViaResendApi"
 

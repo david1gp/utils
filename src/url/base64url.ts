@@ -1,4 +1,4 @@
-import { createResult, createResultError, type Result } from "~result"
+import { createResult, createResultError, type Result } from "@adaptive-ds/result"
 
 /**
  * @returns ResultOk<string> with URL-safe Base64

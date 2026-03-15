@@ -1,4 +1,4 @@
-import type { Result } from "~result"
+import type { Result } from "@adaptive-ds/result"
 import { readEnvVariableResult } from "../../env/readEnvVariable"
 import { type ZeptomailAddress, type ZeptomailProps, sendEmailsViaZeptomailApi } from "./sendEmailsViaZeptomailApi"
 

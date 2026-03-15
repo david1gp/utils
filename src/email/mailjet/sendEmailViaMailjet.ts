@@ -1,4 +1,4 @@
-import { createError, createResult, type Result, type ResultErr } from "~result"
+import { createError, createResult, type Result, type ResultErr } from "@adaptive-ds/result"
 import { sendEmailsViaMailjet, type MailjetEnvVariableNames } from "./sendEmailsViaMailjet"
 import { type MailjetEmailProps, type MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi"
 

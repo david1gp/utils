@@ -1,5 +1,5 @@
+import { type PromiseResult, createError, createResult } from "@adaptive-ds/result"
 import * as a from "valibot"
-import { type PromiseResult, createError, createResult } from "~result"
 import { intOrStringSchema } from "../valibot/intOrStringSchema"
 
 export type TelegramMessageParseMode = keyof typeof telegramMessageParseMode

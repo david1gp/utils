@@ -1,4 +1,4 @@
-import type { Result, ResultErr } from "~result"
+import type { Result, ResultErr } from "@adaptive-ds/result"
 import { readEnvVariableResult } from "../../env/readEnvVariable"
 import { type ResendEmailProps, type ResendEmailSend, sendEmailsViaResendApi } from "./sendEmailsViaResendApi"
 

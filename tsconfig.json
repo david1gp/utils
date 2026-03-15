@@ -20,15 +20,16 @@
     //
     // absolute import paths
     //
+    "baseUrl": ".",
     "paths": {
       "~utils/*": [
         "./src/*"
       ],
       "~result": [
-        "./node_modules/@adaptive-ds/result/dist/index.d.ts"
+        "./node_modules/@adaptive-ds/result/dist/index.js"
       ],
       "~result/*": [
-        "./node_modules/@adaptive-ds/result/dist/*.d.ts"
+        "./node_modules/@adaptive-ds/result/dist/*"
       ]
     },
     //

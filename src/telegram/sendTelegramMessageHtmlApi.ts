@@ -1,4 +1,4 @@
-import type { PromiseResult } from "~result"
+import type { PromiseResult } from "@adaptive-ds/result"
 import { sendTelegramMessageApi, telegramMessageParseMode } from "./sendTelegramMessageApi"
 
 export type TelegramMessageSendingProps = {

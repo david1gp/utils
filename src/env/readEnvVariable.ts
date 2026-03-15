@@ -1,4 +1,4 @@
-import { createError, createResult, type Result } from "~result"
+import { createError, createResult, type Result } from "@adaptive-ds/result"
 
 export function readEnvVariable(name: string): string | undefined {
   // Check Backend/Bun/Node.js/Convex process environment first
