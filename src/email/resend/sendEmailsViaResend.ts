@@ -1,10 +1,6 @@
-import {
-  type ResendEmailProps,
-  type ResendEmailSend,
-  sendEmailsViaResendApi,
-} from "./sendEmailsViaResendApi"
+import type { Result, ResultErr } from "~result"
 import { readEnvVariableResult } from "../../env/readEnvVariable"
-import type { Result, ResultErr } from "../../result/Result"
+import { type ResendEmailProps, type ResendEmailSend, sendEmailsViaResendApi } from "./sendEmailsViaResendApi"
 
 export type ResendEnvVariableNames = {
   apiKey: string

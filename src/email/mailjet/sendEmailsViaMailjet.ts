@@ -1,11 +1,11 @@
+import { createResult, type Result, type ResultErr } from "~result"
+import { readEnvVariableResult } from "../../env/readEnvVariable"
 import {
   sendEmailsViaMailjetApi,
   type MailjetBulkResult,
   type MailjetEmailProps,
   type MailjetSendProps,
 } from "./sendEmailsViaMailjetApi"
-import { readEnvVariableResult } from "../../env/readEnvVariable"
-import { createResult, type Result, type ResultErr } from "../../result/Result"
 
 export type MailjetEnvVariableNames = {
   apiKeyPublic: string

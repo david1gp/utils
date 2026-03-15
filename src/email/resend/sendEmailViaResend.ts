@@ -1,10 +1,6 @@
+import { type Result } from "~result"
 import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend"
-import {
-  type ResendAddressInfo,
-  type ResendEmailProps,
-  type ResendEmailSend,
-} from "./sendEmailsViaResendApi"
-import { type Result } from "../../result/Result"
+import { type ResendAddressInfo, type ResendEmailProps, type ResendEmailSend } from "./sendEmailsViaResendApi"
 
 export async function sendSingleEmailViaResend(
   subject: string,

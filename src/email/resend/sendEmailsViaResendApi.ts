@@ -1,6 +1,6 @@
 import * as a from "valibot"
+import { type Result, createError, createResult } from "~result"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty"
-import { type Result, createError, createResult } from "../../result/Result"
 
 export type ResendAddressInfo = {
   name?: string

@@ -1,9 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import {
-  dateTimeFormat,
-  formatDateTimeFull,
-  formatDateTimeIso
-} from "./dateTimeFormat"
+import { dateTimeFormat, formatDateTimeFull, formatDateTimeIso } from "./dateTimeFormat"
 import { dateTimeFormatStyle } from "./dateTimeFormatStyle"
 
 describe("dateTimeFormat", () => {

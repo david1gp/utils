@@ -1,4 +1,4 @@
-import { createResult, createResultError, type Result } from "../result/Result"
+import { createResult, createResultError, type Result } from "~result"
 
 /**
  * @returns ResultOk<string> with URL-safe Base64

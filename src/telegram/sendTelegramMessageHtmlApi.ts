@@ -1,4 +1,4 @@
-import type { PromiseResult } from "../result/Result"
+import type { PromiseResult } from "~result"
 import { sendTelegramMessageApi, telegramMessageParseMode } from "./sendTelegramMessageApi"
 
 export type TelegramMessageSendingProps = {

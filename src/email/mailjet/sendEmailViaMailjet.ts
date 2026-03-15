@@ -1,6 +1,6 @@
+import { createError, createResult, type Result, type ResultErr } from "~result"
 import { sendEmailsViaMailjet, type MailjetEnvVariableNames } from "./sendEmailsViaMailjet"
 import { type MailjetEmailProps, type MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi"
-import { createError, createResult, type Result, type ResultErr } from "../../result/Result"
 
 export async function sendEmailViaMailjet(
   props: MailjetEmailProps,

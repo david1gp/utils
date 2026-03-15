@@ -1,10 +1,10 @@
+import { type Result } from "~result"
 import {
   sendEmailsViaZeptomail,
   type ZeptomailEnvVariableNames,
   type ZeptomailOptionalSender,
 } from "./sendEmailsViaZeptomail"
 import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi"
-import { type Result } from "../../result/Result"
 
 export async function sendEmailViaZeptomai(
   subject: string,
