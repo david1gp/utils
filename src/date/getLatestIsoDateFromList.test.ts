@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { getLatestIsoDateFromList } from "~utils/date/getLatestIsoDateFromList"
+import { getLatestIsoDateFromList } from "./getLatestIsoDateFromList"
 
 test("getLatestIsoDateFromList", () => {
   const d1 = "2023-01-01"

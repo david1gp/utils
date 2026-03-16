@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { convertTextToLines } from "~utils/text/convertTextToLines"
+import { convertTextToLines } from "./convertTextToLines"
 
 test("convertTextToLines: 1 line", () => {
   const lines = convertTextToLines("a")

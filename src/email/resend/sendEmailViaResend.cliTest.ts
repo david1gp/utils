@@ -1,6 +1,6 @@
-import { nowIso } from "~utils/date/nowIso"
-import { readEnvVariableResult } from "~utils/env/readEnvVariable"
-import { jsonStringifyPretty } from "~utils/json/jsonStringifyPretty"
+import { nowIso } from "../../date/nowIso"
+import { readEnvVariableResult } from "../../env/readEnvVariable"
+import { jsonStringifyPretty } from "../../json/jsonStringifyPretty"
 import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend"
 
 sendTest()

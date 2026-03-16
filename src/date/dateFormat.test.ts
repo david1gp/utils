@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test"
-import { dateFormat } from "~utils/date/dateFormat"
-import { dateFormatStyle } from "~utils/date/dateFormatStyle"
+import { dateFormat } from "./dateFormat"
+import { dateFormatStyle } from "./dateFormatStyle"
 
 const string = "2024-08-31T12:00:00.000Z"
 const date = new Date(string)

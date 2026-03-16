@@ -1,5 +1,5 @@
-import { jsonStringifyPretty } from "~utils/json/jsonStringifyPretty"
-import { sendTelegramMessageHtml, type TelegramEnvVariableNames } from "~utils/telegram/sendTelegramMessageHtml"
+import { jsonStringifyPretty } from "../json/jsonStringifyPretty"
+import { sendTelegramMessageHtml, type TelegramEnvVariableNames } from "./sendTelegramMessageHtml"
 
 /**
  * https://core.telegram.org/bots/api#sendmessage

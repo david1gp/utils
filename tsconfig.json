@@ -18,21 +18,6 @@
     //
     "skipLibCheck": true,
     //
-    // absolute import paths
-    //
-    "baseUrl": ".",
-    "paths": {
-      "~utils/*": [
-        "./src/*"
-      ],
-      "~result": [
-        "./node_modules/@adaptive-ds/result/dist/index.js"
-      ],
-      "~result/*": [
-        "./node_modules/@adaptive-ds/result/dist/*"
-      ]
-    },
-    //
     // https://devblogs.microsoft.com/typescript/announcing-typescript-5-8/#the---erasablesyntaxonly-option
     //
     "erasableSyntaxOnly": true,
