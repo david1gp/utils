@@ -51,7 +51,10 @@
     "url": "git+https://github.com/david1gp/utils.git"
   },
   "exports": {
-    "./*": "./dist/*"
+    "./*.js": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
   },
   "files": [
     "dist"
