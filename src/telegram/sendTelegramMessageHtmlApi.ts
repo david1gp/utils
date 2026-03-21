@@ -1,5 +1,5 @@
 import type { PromiseResult } from "@adaptive-ds/result"
-import { sendTelegramMessageApi, telegramMessageParseMode } from "./sendTelegramMessageApi"
+import { sendTelegramMessageApi, telegramMessageParseMode } from "./sendTelegramMessageApi.js"
 
 export type TelegramMessageSendingProps = {
   chatId: string | number

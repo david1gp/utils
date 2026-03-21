@@ -1,4 +1,4 @@
-import { objectEntries } from "../obj/objectEntries"
+import { type ObjectEntry, objectEntries } from "../obj/objectEntries.js"
 
 export function objToUrlParams2(
   required: Record<string, number | string | boolean | null>,
@@ -8,14 +8,14 @@ export function objToUrlParams2(
     .map((key) => `${key}=${required[key]}`)
     .join("&")
   const hash = objectEntries(optional)
-    .filter(([k, v]) => !!v)
+    .filter((entry): entry is ObjectEntry<typeof optional> => !!entry[1])
     .map(([k, v]) => `${k}=${v}`)
     .join("&")
   return search + (hash ? `&${hash}` : "")
 }
 export function objToUrlParamsOptional(o: Record<string, number | string | boolean | undefined | null>): string {
   return objectEntries(o)
-    .filter(([k, v]) => !!v)
+    .filter((entry): entry is ObjectEntry<typeof o> => !!entry[1])
     .map(([k, v]) => `${k}=${v}`)
     .join("&")
 }
@@ -25,7 +25,10 @@ export function objToUrlParamsIfNotDefault(
   byDefault: Record<string, number | string | boolean | undefined | null>,
 ): string {
   return objectEntries(o)
-    .filter(([k, v]) => (byDefault[k] ? v !== byDefault[k] : !!v))
+    .filter(
+      (entry): entry is ObjectEntry<typeof o> =>
+        byDefault[entry[0]] ? entry[1] !== byDefault[entry[0]] : !!entry[1],
+    )
     .map(([k, v]) => `${k}=${v}`)
     .join("&")
 }

@@ -1,11 +1,11 @@
 import { createResult, type Result, type ResultErr } from "@adaptive-ds/result"
-import { readEnvVariableResult } from "../../env/readEnvVariable"
+import { readEnvVariableResult } from "../../env/readEnvVariable.js"
 import {
   sendEmailsViaMailjetApi,
   type MailjetBulkResult,
   type MailjetEmailProps,
   type MailjetSendProps,
-} from "./sendEmailsViaMailjetApi"
+} from "./sendEmailsViaMailjetApi.js"
 
 export type MailjetEnvVariableNames = {
   apiKeyPublic: string
@@ -28,7 +28,7 @@ export async function sendEmailsViaMailjet(
   const apiKeyPrivate = apiKeyPrivateResult.data
 
   // Check if any message is missing sender
-  const hasMissingSender = props.Messages.some((message) => !message.From)
+  const hasMissingSender = props.Messages.some((message: MailjetEmailProps) => !message.From)
   let messagesToSend = props.Messages
   if (hasMissingSender) {
     const addSenderResult = addSender(props.Messages, envVariableNames)

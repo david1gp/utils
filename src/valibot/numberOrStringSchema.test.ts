@@ -1,6 +1,6 @@
 import { describe, expect, it } from "bun:test"
 import * as a from "valibot"
-import { numberOrStringSchema } from "./numberOrStringSchema"
+import { numberOrStringSchema } from "./numberOrStringSchema.js"
 
 describe("numberOrStringSchema", () => {
   it("should pass for numbers", () => {

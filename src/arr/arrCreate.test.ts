@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { arrCreate } from "./arrCreate"
+import { arrCreate } from "./arrCreate.js"
 
 test("arrCreate: 0", () => {
   expect(arrCreate(0, (i: number) => i)).toEqual([])

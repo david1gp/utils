@@ -1,6 +1,6 @@
 import { type Result } from "@adaptive-ds/result"
-import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend"
-import { type ResendAddressInfo, type ResendEmailProps, type ResendEmailSend } from "./sendEmailsViaResendApi"
+import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend.js"
+import { type ResendAddressInfo, type ResendEmailProps, type ResendEmailSend } from "./sendEmailsViaResendApi.js"
 
 export async function sendSingleEmailViaResend(
   subject: string,

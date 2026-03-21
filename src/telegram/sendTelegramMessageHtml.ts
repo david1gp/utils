@@ -1,6 +1,6 @@
 import { type PromiseResult } from "@adaptive-ds/result"
-import { readEnvVariableResult } from "../env/readEnvVariable"
-import { sendTelegramMessageHtmlApi, type TelegramMessageSendingProps } from "./sendTelegramMessageHtmlApi"
+import { readEnvVariableResult } from "../env/readEnvVariable.js"
+import { sendTelegramMessageHtmlApi, type TelegramMessageSendingProps } from "./sendTelegramMessageHtmlApi.js"
 
 export type TelegramEnvVariableNames = {
   apiToken: string

@@ -1,4 +1,4 @@
-import { notNullFilter } from "../arr/notNullFilter"
+import { notNullFilter } from "../arr/notNullFilter.js"
 
 export function getLatestIsoDateFromList(arr: (string | undefined | null)[]): string | null {
   const sorted = arr.filter(notNullFilter)

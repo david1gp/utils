@@ -1,6 +1,6 @@
-import type { BunCmd } from "./BunCmd"
-import { cryAndTryAgainLater } from "./cryAndTryAgainLater"
-import { runCmdAsync } from "./runCmdAsync"
+import type { BunCmd } from "./BunCmd.js"
+import { cryAndTryAgainLater } from "./cryAndTryAgainLater.js"
+import { runCmdAsync } from "./runCmdAsync.js"
 
 export async function runCmdLocally(cmd: string | string[]): Promise<BunCmd> {
   return runCmdAsync(["sh", "-c", Array.isArray(cmd) ? cmd.join(" ") : cmd])

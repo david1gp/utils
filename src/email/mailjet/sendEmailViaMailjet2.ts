@@ -1,7 +1,7 @@
 import type { Result } from "@adaptive-ds/result"
-import type { MailjetEnvVariableNames } from "./sendEmailsViaMailjet"
-import type { MailjetAddressInfo, MailjetEmailProps, MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi"
-import { sendEmailViaMailjet } from "./sendEmailViaMailjet"
+import type { MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
+import type { MailjetAddressInfo, MailjetEmailProps, MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi.js"
+import { sendEmailViaMailjet } from "./sendEmailViaMailjet.js"
 
 export async function sendEmailViaMailjet2(
   subject: string,

@@ -1,5 +1,5 @@
-import { dateTimeFormatterCreate } from "./dateTimeFormatterCreate"
-import { type DateTimeFormatStyle } from "./dateTimeFormatStyle"
+import { dateTimeFormatterCreate } from "./dateTimeFormatterCreate.js"
+import { type DateTimeFormatStyle } from "./dateTimeFormatStyle.js"
 
 let cachedLocale: string | undefined = undefined
 let cachedFormat: DateTimeFormatStyle | undefined = undefined
@@ -11,5 +11,5 @@ export function dateTimeFormatterGetCached(format: DateTimeFormatStyle, l?: stri
     cachedFormat = format
     cachedFormatter = dateTimeFormatterCreate(format, l)
   }
-  return cachedFormatter
+  return cachedFormatter!
 }

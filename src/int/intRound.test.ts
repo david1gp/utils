@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { intRound5 } from "./intRound"
+import { intRound5 } from "./intRound.js"
 
 test("round5", () => {
   expect(intRound5(0.05)).toBe(0)

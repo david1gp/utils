@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
-import { dateTimeFormat, formatDateTimeFull, formatDateTimeIso } from "./dateTimeFormat"
-import { dateTimeFormatStyle } from "./dateTimeFormatStyle"
+import { dateTimeFormat, formatDateTimeFull, formatDateTimeIso } from "./dateTimeFormat.js"
+import { dateTimeFormatStyle } from "./dateTimeFormatStyle.js"
 
 describe("dateTimeFormat", () => {
   const testDate = new Date("2023-12-25T10:30:45.000Z")

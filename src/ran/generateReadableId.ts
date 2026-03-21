@@ -1,4 +1,4 @@
-import { urlAlphabet32 } from "./urlAlphabet32"
+import { urlAlphabet32 } from "./urlAlphabet32.js"
 
 /**
  * * works in browser

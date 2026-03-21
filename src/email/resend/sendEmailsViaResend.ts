@@ -1,6 +1,6 @@
 import type { Result, ResultErr } from "@adaptive-ds/result"
-import { readEnvVariableResult } from "../../env/readEnvVariable"
-import { type ResendEmailProps, type ResendEmailSend, sendEmailsViaResendApi } from "./sendEmailsViaResendApi"
+import { readEnvVariableResult } from "../../env/readEnvVariable.js"
+import { type ResendEmailProps, type ResendEmailSend, sendEmailsViaResendApi } from "./sendEmailsViaResendApi.js"
 
 export type ResendEnvVariableNames = {
   apiKey: string

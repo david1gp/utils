@@ -1,5 +1,5 @@
 import { expect, it } from "bun:test"
-import { intRange } from "./intRange"
+import { intRange } from "./intRange.js"
 
 it("range", () => {
   expect(intRange(3)).toEqual([0, 1, 2])

@@ -1,5 +1,5 @@
-import { jsonStringifyPretty } from "../json/jsonStringifyPretty"
-import type { BunCmd } from "./BunCmd"
+import { jsonStringifyPretty } from "../json/jsonStringifyPretty.js"
+import type { BunCmd } from "./BunCmd.js"
 
 export async function runCmdAsync(cmd: string[], logBunCmd: boolean = true): Promise<BunCmd> {
   const startedAt = performance.now()

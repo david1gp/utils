@@ -1,4 +1,4 @@
-import { type DateFormatStyle, dateFormatStyle } from "./dateFormatStyle"
+import { type DateFormatStyle, dateFormatStyle } from "./dateFormatStyle.js"
 
 export function dateFormatterCreate(format: DateFormatStyle, l?: string): Intl.DateTimeFormat {
   switch (format) {
@@ -31,4 +31,6 @@ export function dateFormatterCreate(format: DateFormatStyle, l?: string): Intl.D
       })
     }
   }
+
+  throw new Error(`Unsupported date format: ${format satisfies never}`)
 }

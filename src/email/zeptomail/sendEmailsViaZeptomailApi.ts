@@ -1,5 +1,5 @@
 import { type PromiseResult, createError, createResult } from "@adaptive-ds/result"
-import { jsonStringifyPretty } from "../../json/jsonStringifyPretty"
+import { jsonStringifyPretty } from "../../json/jsonStringifyPretty.js"
 
 export const zeptosBaseApiUrl = "https://api.zeptomail.com/v1.1/email"
 

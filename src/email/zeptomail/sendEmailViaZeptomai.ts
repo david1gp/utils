@@ -3,8 +3,8 @@ import {
     sendEmailsViaZeptomail,
     type ZeptomailEnvVariableNames,
     type ZeptomailOptionalSender,
-} from "./sendEmailsViaZeptomail"
-import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi"
+} from "./sendEmailsViaZeptomail.js"
+import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi.js"
 
 export async function sendEmailViaZeptomai(
   subject: string,

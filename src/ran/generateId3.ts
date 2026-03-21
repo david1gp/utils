@@ -1,4 +1,4 @@
-import { generateReadableId } from "./generateReadableId"
+import { generateReadableId } from "./generateReadableId.js"
 
 const gen = generateReadableId(3)
 

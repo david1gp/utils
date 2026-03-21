@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test"
-import { searchParamsToObject } from "./searchParamsToObject"
+import { searchParamsToObject } from "./searchParamsToObject.js"
 
 test("searchParamsToObject", () => {
   const given = "access_token=super-secret-token&scope=user%3Aemail&token_type=bearer"

@@ -1,5 +1,5 @@
-import { dateTimeFormatStyle, type DateTimeFormatStyle } from "./dateTimeFormatStyle"
-import { dateTimeFormatterGetCached } from "./dateTimeFormatterGetCached"
+import { dateTimeFormatStyle, type DateTimeFormatStyle } from "./dateTimeFormatStyle.js"
+import { dateTimeFormatterGetCached } from "./dateTimeFormatterGetCached.js"
 
 export function dateTimeFormat(date: Date | string, format: DateTimeFormatStyle, l?: string) {
   const formatter = dateTimeFormatterGetCached(format, l)

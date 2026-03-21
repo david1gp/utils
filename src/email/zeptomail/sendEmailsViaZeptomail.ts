@@ -1,6 +1,6 @@
 import type { Result } from "@adaptive-ds/result"
-import { readEnvVariableResult } from "../../env/readEnvVariable"
-import { type ZeptomailAddress, type ZeptomailProps, sendEmailsViaZeptomailApi } from "./sendEmailsViaZeptomailApi"
+import { readEnvVariableResult } from "../../env/readEnvVariable.js"
+import { type ZeptomailAddress, type ZeptomailProps, sendEmailsViaZeptomailApi } from "./sendEmailsViaZeptomailApi.js"
 
 export type ZeptomailEnvVariableNames = {
   apiKey: string
