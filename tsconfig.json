@@ -11,6 +11,11 @@
     //
     "lib": [
       "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "types": [
+      "bun"
     ],
     //
     // performance

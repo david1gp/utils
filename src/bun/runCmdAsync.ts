@@ -11,10 +11,10 @@ export async function runCmdAsync(cmd: string[], logBunCmd: boolean = true): Pro
     stderr: "pipe",
   })
   const exitCode = await process.exited
-  const output = await process.stdout.text()
-  const error = await process.stderr.text()
-  const outputLines = output.split("\n").filter((s) => s.length > 0)
-  const errorLines = error.split("\n").filter((s) => s.length > 0)
+  const output = await new Response(process.stdout).text()
+  const error = await new Response(process.stderr).text()
+  const outputLines = output.split("\n").filter((s: string) => s.length > 0)
+  const errorLines = error.split("\n").filter((s: string) => s.length > 0)
   const lines = [...outputLines, ...errorLines]
   const endedAt = performance.now()
   const ms = Math.round(endedAt - startedAt)
