@@ -25,9 +25,8 @@ export function objToUrlParamsIfNotDefault(
   byDefault: Record<string, number | string | boolean | undefined | null>,
 ): string {
   return objectEntries(o)
-    .filter(
-      (entry): entry is ObjectEntry<typeof o> =>
-        byDefault[entry[0]] ? entry[1] !== byDefault[entry[0]] : !!entry[1],
+    .filter((entry): entry is ObjectEntry<typeof o> =>
+      byDefault[entry[0]] ? entry[1] !== byDefault[entry[0]] : !!entry[1],
     )
     .map(([k, v]) => `${k}=${v}`)
     .join("&")
