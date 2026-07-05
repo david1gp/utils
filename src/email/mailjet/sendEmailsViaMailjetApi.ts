@@ -47,6 +47,9 @@ export type MailjetSingleMessageResult = {
   To?: Array<MailjetMessageResult>
 }
 
+/**
+ * https://dev.mailjet.com/email/guides/send-api-v31/
+ */
 export async function sendEmailsViaMailjetApi(
   props: MailjetSendProps,
   apiKeyPublic: string,

@@ -12,6 +12,9 @@ export interface ZeptomailOptionalSender extends Omit<ZeptomailProps, "from"> {
   from?: ZeptomailAddress
 }
 
+/**
+ * https://www.zoho.com/zeptomail/help/api/email-sending.html
+ */
 export async function sendEmailsViaZeptomail(
   props: ZeptomailOptionalSender,
   envVariableNames: ZeptomailEnvVariableNames,

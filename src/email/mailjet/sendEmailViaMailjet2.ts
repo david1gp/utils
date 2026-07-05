@@ -3,6 +3,9 @@ import type { MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
 import type { MailjetAddressInfo, MailjetEmailProps, MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi.js"
 import { sendEmailViaMailjet } from "./sendEmailViaMailjet.js"
 
+/**
+ * https://dev.mailjet.com/email/guides/send-api-v31/
+ */
 export async function sendEmailViaMailjet2(
   subject: string,
   html: string,

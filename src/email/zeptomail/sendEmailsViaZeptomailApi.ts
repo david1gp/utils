@@ -27,6 +27,9 @@ export type ZeptomailAttachment = {
   name: String
 }
 
+/**
+ * https://www.zoho.com/zeptomail/help/api/email-sending.html
+ */
 export async function sendEmailsViaZeptomailApi(props: ZeptomailProps, apiKey: string): PromiseResult<null> {
   const op = "sendTransactionalEmail"
 

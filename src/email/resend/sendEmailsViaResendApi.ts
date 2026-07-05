@@ -47,6 +47,9 @@ export type ResendEmailSend = {
   id: string
 }
 
+/**
+ * https://resend.com/docs/api-reference/emails/send-email
+ */
 export async function sendEmailsViaResendApi(
   props: ResendEmailProps,
   apiKey: string,

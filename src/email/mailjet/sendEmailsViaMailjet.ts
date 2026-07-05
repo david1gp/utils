@@ -14,6 +14,9 @@ export type MailjetEnvVariableNames = {
   senderName: string
 }
 
+/**
+ * https://dev.mailjet.com/email/guides/send-api-v31/
+ */
 export async function sendEmailsViaMailjet(
   props: MailjetSendProps,
   envVariableNames: MailjetEnvVariableNames,

@@ -1,11 +1,14 @@
 import { type Result } from "@adaptive-ds/result"
 import {
-    sendEmailsViaZeptomail,
-    type ZeptomailEnvVariableNames,
-    type ZeptomailOptionalSender,
+  sendEmailsViaZeptomail,
+  type ZeptomailEnvVariableNames,
+  type ZeptomailOptionalSender,
 } from "./sendEmailsViaZeptomail.js"
 import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi.js"
 
+/**
+ * https://www.zoho.com/zeptomail/help/api/email-sending.html
+ */
 export async function sendEmailViaZeptomai(
   subject: string,
   html: string,

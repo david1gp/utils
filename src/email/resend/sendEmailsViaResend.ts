@@ -8,6 +8,9 @@ export type ResendEnvVariableNames = {
   senderName: string
 }
 
+/**
+ * https://resend.com/docs/api-reference/emails/send-email
+ */
 export async function sendEmailsViaResend(
   props: ResendEmailProps,
   envVariableNames: ResendEnvVariableNames,

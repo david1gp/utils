@@ -2,6 +2,9 @@ import { createError, createResult, type Result, type ResultErr } from "@adaptiv
 import { sendEmailsViaMailjet, type MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
 import { type MailjetEmailProps, type MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi.js"
 
+/**
+ * https://dev.mailjet.com/email/guides/send-api-v31/
+ */
 export async function sendEmailViaMailjet(
   props: MailjetEmailProps,
   envVariableNames: MailjetEnvVariableNames,
