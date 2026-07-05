@@ -75,6 +75,13 @@ const id = idGenerator(); // "abc123def456"
 - `numberOrStringSchema` - Number or string validation
 - `stringifyValibotErrors` - Error formatting
 
+### Email Sending
+
+- `sendEmailsViaCloudflare` - Cloudflare Email Service
+- `sendEmailsViaMailjet` - Mailjet
+- `sendEmailsViaResend` - Resend
+- `sendEmailsViaZeptomail` - ZeptoMail
+
 ### Other Utilities
 
 - Date manipulation
