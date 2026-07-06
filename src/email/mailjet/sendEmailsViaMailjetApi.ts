@@ -1,4 +1,4 @@
-import { type Result, createError, createResult } from "@adaptive-ds/result"
+import { createError, createResult, type Result } from "@adaptive-ds/result"
 import * as a from "valibot"
 
 export type MailjetSendProps = {

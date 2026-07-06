@@ -9,7 +9,7 @@
     "update": "bun update",
     "update:commit": "bun update && git add package.json && bun run tsc && git commit -m \"chore(deps): update dependencies\" && git push",
     "relativeImports": "bun ops/relative_import_rewrite.ts",
-    "format": "bunx prettier --write src",
+    "format": "biome format --write src package.json tsconfig.json tsconfig.lib.json biome.json",
     "clean": "rm -rf ./dist",
     "reset": "rm -rf ./node_modules"
   },

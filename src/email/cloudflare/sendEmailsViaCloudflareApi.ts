@@ -1,4 +1,4 @@
-import { type Result, createError, createResult } from "@adaptive-ds/result"
+import { createError, createResult, type Result } from "@adaptive-ds/result"
 import * as a from "valibot"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty.js"
 
@@ -56,15 +56,31 @@ export type CloudflareEmailSend = {
  * https://developers.cloudflare.com/email-service/api/send-emails/rest-api/#error-codes
  */
 export const cloudflareEmailErrorCodes: Record<number, { httpStatus: number; message: string; description: string }> = {
-  10000: { httpStatus: 404, message: "email.sending.error.not_found", description: "Resource not found" },
+  10000: {
+    httpStatus: 404,
+    message: "email.sending.error.not_found",
+    description: "Resource not found",
+  },
   10001: {
     httpStatus: 400,
     message: "email.sending.error.invalid_request_schema",
     description: "Malformed request",
   },
-  10002: { httpStatus: 500, message: "email.sending.error.internal_server", description: "Server error" },
-  10003: { httpStatus: 500, message: "email.sending.error.not_implemented", description: "Not implemented" },
-  10004: { httpStatus: 429, message: "email.sending.error.throttled", description: "Rate limited" },
+  10002: {
+    httpStatus: 500,
+    message: "email.sending.error.internal_server",
+    description: "Server error",
+  },
+  10003: {
+    httpStatus: 500,
+    message: "email.sending.error.not_implemented",
+    description: "Not implemented",
+  },
+  10004: {
+    httpStatus: 429,
+    message: "email.sending.error.throttled",
+    description: "Rate limited",
+  },
   10100: {
     httpStatus: 503,
     message: "email.sending.error.authentication.upstream",
@@ -90,14 +106,26 @@ export const cloudflareEmailErrorCodes: Record<number, { httpStatus: number; mes
     message: "email.sending.error.authentication.not_entitled",
     description: "Account unauthorized",
   },
-  10200: { httpStatus: 400, message: "email.sending.error.email.too_big", description: "Exceeds size limit" },
+  10200: {
+    httpStatus: 400,
+    message: "email.sending.error.email.too_big",
+    description: "Exceeds size limit",
+  },
   10201: {
     httpStatus: 400,
     message: "email.sending.error.email.no_content_length",
     description: "Missing content length",
   },
-  10202: { httpStatus: 400, message: "email.sending.error.email.invalid", description: "Invalid email content" },
-  10203: { httpStatus: 403, message: "email.sending.error.email.sending_disabled", description: "Sending disabled" },
+  10202: {
+    httpStatus: 400,
+    message: "email.sending.error.email.invalid",
+    description: "Invalid email content",
+  },
+  10203: {
+    httpStatus: 403,
+    message: "email.sending.error.email.sending_disabled",
+    description: "Sending disabled",
+  },
 }
 
 /**

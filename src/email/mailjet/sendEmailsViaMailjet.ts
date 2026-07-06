@@ -1,10 +1,10 @@
 import { createResult, type Result, type ResultErr } from "@adaptive-ds/result"
 import { readEnvVariableResult } from "../../env/readEnvVariable.js"
 import {
-  sendEmailsViaMailjetApi,
   type MailjetBulkResult,
   type MailjetEmailProps,
   type MailjetSendProps,
+  sendEmailsViaMailjetApi,
 } from "./sendEmailsViaMailjetApi.js"
 
 export type MailjetEnvVariableNames = {

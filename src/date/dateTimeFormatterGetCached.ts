@@ -1,9 +1,9 @@
+import type { DateTimeFormatStyle } from "./dateTimeFormatStyle.js"
 import { dateTimeFormatterCreate } from "./dateTimeFormatterCreate.js"
-import { type DateTimeFormatStyle } from "./dateTimeFormatStyle.js"
 
-let cachedLocale: string | undefined = undefined
-let cachedFormat: DateTimeFormatStyle | undefined = undefined
-let cachedFormatter: Intl.DateTimeFormat | undefined = undefined
+let cachedLocale: string | undefined
+let cachedFormat: DateTimeFormatStyle | undefined
+let cachedFormatter: Intl.DateTimeFormat | undefined
 
 export function dateTimeFormatterGetCached(format: DateTimeFormatStyle, l?: string): Intl.DateTimeFormat {
   if (!cachedFormatter || cachedLocale !== l || cachedFormat !== format) {

@@ -1,4 +1,4 @@
-import { type PromiseResult, createError, createResult } from "@adaptive-ds/result"
+import { createError, createResult, type PromiseResult } from "@adaptive-ds/result"
 import * as a from "valibot"
 import { intOrStringSchema } from "../valibot/intOrStringSchema.js"
 

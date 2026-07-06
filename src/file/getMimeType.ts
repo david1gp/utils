@@ -9,7 +9,7 @@ export function getMimeType(filename: string): string | undefined {
 
   const match1 = match[1]
   if (!match1) return
-  // @ts-ignore
+  // @ts-expect-error
   const mimeType = mimeTypes[match1]
   // if ((mimeType && mimeType.startsWith("text")) || mimeType === "application/json") {
   //   mimeType += "; charset=utf-8"

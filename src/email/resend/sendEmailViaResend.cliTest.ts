@@ -1,7 +1,7 @@
 import { nowIso } from "../../date/nowIso.js"
 import { readEnvVariableResult } from "../../env/readEnvVariable.js"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty.js"
-import { sendEmailsViaResend, type ResendEnvVariableNames } from "./sendEmailsViaResend.js"
+import { type ResendEnvVariableNames, sendEmailsViaResend } from "./sendEmailsViaResend.js"
 
 sendTest()
 

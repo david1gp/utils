@@ -1,6 +1,6 @@
 import { createError, createResult, type Result, type ResultErr } from "@adaptive-ds/result"
-import { sendEmailsViaMailjet, type MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
-import { type MailjetEmailProps, type MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi.js"
+import { type MailjetEnvVariableNames, sendEmailsViaMailjet } from "./sendEmailsViaMailjet.js"
+import type { MailjetEmailProps, MailjetSingleMessageResult } from "./sendEmailsViaMailjetApi.js"
 
 /**
  * https://dev.mailjet.com/email/guides/send-api-v31/

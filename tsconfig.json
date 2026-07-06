@@ -9,14 +9,8 @@
     //
     // dom
     //
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable"
-    ],
-    "types": [
-      "bun"
-    ],
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "types": ["bun"],
     //
     // performance
     //
@@ -52,10 +46,7 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src",
-    "test"
-  ],
+  "include": ["src", "test"],
   "exclude": [
     ".idea",
     ".vscode",
@@ -69,5 +60,5 @@
     "public",
     "public-image-versions",
     "public-images"
-  ],
+  ]
 }

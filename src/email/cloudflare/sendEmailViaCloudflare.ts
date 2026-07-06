@@ -1,10 +1,6 @@
-import { type Result } from "@adaptive-ds/result"
+import type { Result } from "@adaptive-ds/result"
 import { type CloudflareEnvVariableNames, sendEmailsViaCloudflare } from "./sendEmailsViaCloudflare.js"
-import {
-  type CloudflareAddressInfo,
-  type CloudflareEmailProps,
-  type CloudflareEmailSend,
-} from "./sendEmailsViaCloudflareApi.js"
+import type { CloudflareAddressInfo, CloudflareEmailProps, CloudflareEmailSend } from "./sendEmailsViaCloudflareApi.js"
 
 /**
  * https://developers.cloudflare.com/email-service/api/send-emails/rest-api/

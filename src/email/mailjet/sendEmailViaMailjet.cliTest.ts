@@ -1,7 +1,7 @@
-import type { MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
-import type { MailjetEmailProps } from "./sendEmailsViaMailjetApi.js"
 import { readEnvVariableResult } from "../../env/readEnvVariable.js"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty.js"
+import type { MailjetEnvVariableNames } from "./sendEmailsViaMailjet.js"
+import type { MailjetEmailProps } from "./sendEmailsViaMailjetApi.js"
 import { sendEmailViaMailjet } from "./sendEmailViaMailjet.js"
 
 async function main() {

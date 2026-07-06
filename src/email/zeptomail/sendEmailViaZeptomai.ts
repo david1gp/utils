@@ -1,10 +1,10 @@
-import { type Result } from "@adaptive-ds/result"
+import type { Result } from "@adaptive-ds/result"
 import {
   sendEmailsViaZeptomail,
   type ZeptomailEnvVariableNames,
   type ZeptomailOptionalSender,
 } from "./sendEmailsViaZeptomail.js"
-import { type ZeptomailAddress } from "./sendEmailsViaZeptomailApi.js"
+import type { ZeptomailAddress } from "./sendEmailsViaZeptomailApi.js"
 
 /**
  * https://www.zoho.com/zeptomail/help/api/email-sending.html

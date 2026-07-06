@@ -1,4 +1,4 @@
-import { type PromiseResult, createError, createResult } from "@adaptive-ds/result"
+import { createError, createResult, type PromiseResult } from "@adaptive-ds/result"
 import { jsonStringifyPretty } from "../../json/jsonStringifyPretty.js"
 
 export const zeptosBaseApiUrl = "https://api.zeptomail.com/v1.1/email"
@@ -22,9 +22,9 @@ export type ZeptomailAttachment = {
   // Content of attachment. Base64 encoded value of a file.
   content: string
   // Indicates attachment content type. Example: text/plain, image/jpg.
-  mime_type: String
+  mime_type: string
   // File name of the attachment.
-  name: String
+  name: string
 }
 
 /**
